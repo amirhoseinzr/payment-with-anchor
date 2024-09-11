@@ -27,7 +27,7 @@ pub mod solana_payment_app {
     let customer = &mut ctx.accounts.customer;
     let shop_owner = &mut ctx.accounts.owner;
 
-    // Transfer SOL from customer to shop owner
+    // this is paying does transfer SOL from customer to shop owner
     let ix = anchor_lang::solana_program::system_instruction::transfer(
       &customer.key(),
       &shop_owner.key(),
